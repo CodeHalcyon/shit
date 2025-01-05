@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --background: 210 12% 9%;
+  --foreground: 0 0% 94%;
+  --card: 210 12% 9%;
+  --card-foreground: 0 0% 94%;
+  --popover: 210 12% 9%;
+  --popover-foreground: 0 0% 94%;
+  --primary: 195 100% 50%;
+  --primary-foreground: 0 0% 94%;
+  --secondary: 120 61% 50%;
+  --secondary-foreground: 0 0% 94%;
+  --muted: 210 12% 16%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 210 12% 16%;
+  --accent-foreground: 0 0% 94%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 94%;
+  --border: 210 12% 16%;
+  --input: 210 12% 16%;
+  --ring: 195 100% 50%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+}
+
+.dark {
+  --background: 210 12% 9%;
+  --foreground: 0 0% 94%;
+  --card: 210 12% 9%;
+  --card-foreground: 0 0% 94%;
+  --popover: 210 12% 9%;
+  --popover-foreground: 0 0% 94%;
+  --primary: 195 100% 50%;
+  --primary-foreground: 0 0% 94%;
+  --secondary: 120 61% 50%;
+  --secondary-foreground: 0 0% 94%;
+  --muted: 210 12% 16%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 210 12% 16%;
+  --accent-foreground: 0 0% 94%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 94%;
+  --border: 210 12% 16%;
+  --input: 210 12% 16%;
+  --ring: 195 100% 50%;
+}
+
+/* Custom cursor styles */
+@media (min-width: 1024px) {
+  body {
+    cursor: none;
+  }
+
+  a, button {
+    cursor: none;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-xl {
+    font-size: 1.125rem;
+  }
+}
+
+/* Feature card hover effects */
+.feature-card:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
